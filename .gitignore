@@ -1,2 +1,15 @@
 .Rproj.user
 Project 2 Baseball.Rproj
+.local/*
+.rstudio/*
+Rplots.pdf*
+.config/*
+.gitconfig/*
+derived_data/*.csv
+derived_graphics/*.png
+.Rdata
+.Rhistory
+.Rproj.user/
+scratch_work.rmd
+.Rproj.user
+Analysis.pdf
