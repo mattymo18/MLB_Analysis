@@ -28,7 +28,7 @@ Password: mypass
 Use Makefile as recipe book for building artifacts found in derived directories. 
 
 ##### Example:
-In local project directory, to build artifact named Raleigh.Clean.csv:
+In local project directory, to build artifact named Analysis.pdf:
 
     > make Analysis.pdf
     
