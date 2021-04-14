@@ -1,8 +1,13 @@
 ---
-title: "Final Analysis"
-author: "Matt Johnson"
-date: "4/14/2021"
-output: html_document
+title: |
+  | Lahman Database MLB Analysis:
+  | Subtitle HERE
+author:  |
+  | Gus Fridell
+  | Matt Johnson
+  | Michael Lightfoot
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
