@@ -20,11 +20,14 @@ Abstract
 Introduction
 ------------
 
-Methodology
------------
+Data
+----
 
-Results
--------
+Learning Methods
+----------------
+
+Results & Discussion
+--------------------
 
 Conclusion
 ----------

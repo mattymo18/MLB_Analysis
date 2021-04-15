@@ -19,7 +19,7 @@ This Docker container is based on rocker/verse. To run rstudio server:
 
     > docker run -v `pwd`:/home/rstudio -p 8787:8787 -e PASSWORD=mypass -t mlb-env
       
-Then connect to the machine on port 8787.
+Then connect the machine on port 8787.
 
 Username: rstudio \
 Password: mypass
