@@ -9,3 +9,8 @@ clean:
 Analysis.pdf:\
  Analysis.Rmd
 	R -e "rmarkdown::render('Analysis.Rmd')"
+	
+# Builds Proposal
+Proposal.pdf:\
+ Proposal.Rmd
+	R -e "rmarkdown::render('Proposal.Rmd')"
