@@ -1,5 +1,6 @@
 .PHONY: clean
 
+# Cleans Repo
 clean:
 	rm derived_data/*.csv
 	rm derived_graphics/*.png
@@ -14,3 +15,10 @@ Analysis.pdf:\
 Proposal.pdf:\
  Proposal.Rmd
 	R -e "rmarkdown::render('Proposal.Rmd')"
+	
+# Clean data
+derived_data/Clean.Pitchers.csv\
+derived_data/Clean.Catchers.csv\
+derived_data/Clean.Fielders.csv:\
+ tidy_data.R
+	Rscript tidy_data.R
