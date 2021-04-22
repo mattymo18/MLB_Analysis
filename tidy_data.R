@@ -71,7 +71,7 @@ Allstar.standard.DF[which(is.na(Allstar.standard.DF$AllStar)), 31] <- 0
 
 #next join with catchers
 Allstar.catcher.DF <- left_join(Catchers, Allstars, by = c("playerID", "yearID"))
-Allstar.catcher.DF[which(is.na(Allstar.catcher.DF)), 34] <- 0
+Allstar.catcher.DF[which(is.na(Allstar.catcher.DF$AllStar)), 34] <- 0
 
 # nrow(Allstar.catcher.DF %>% filter(AllStar == 1)) / nrow(Allstar.catcher.DF %>% filter(AllStar == 0))
 
