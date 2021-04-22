@@ -86,6 +86,6 @@ Allstar.pitcher.DF[which(is.na(Allstar.pitcher.DF$AllStar)), 31] <- 0
 
 #lets write all these to our derived_data directory
 
-write.csv(Allstar.standard.DF, "derived_data/Clean.Fielders.csv")
-write.csv(Allstar.catcher.DF, "derived_data/Clean.Catchers.csv")
-write.csv(Allstar.pitcher.DF, "derived_data/Clean.Pitchers.csv")
+write.csv(Allstar.standard.DF, "derived_data/Clean.Fielders.csv", row.names = F)
+write.csv(Allstar.catcher.DF, "derived_data/Clean.Catchers.csv", row.names = F)
+write.csv(Allstar.pitcher.DF, "derived_data/Clean.Pitchers.csv", row.names = F)
