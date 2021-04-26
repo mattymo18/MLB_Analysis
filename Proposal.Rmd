@@ -15,10 +15,10 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ### Motivation:
-Major League Baseball is one of the biggest sports leagues in the world. Each year, clubs will spend hundreds of millions of dollars on players to improve their lineups and win games. Baseball has a long history of using data to leverage insights that can’t be easily seen studying player development or watching film. This analysis will use data from the Sean Lahman Baseball Database in an attempt to classify players as Allstars. These data-driven insights can help teams gain an edge over their opponents and potentially win them more games.
+Major League Baseball is one of the biggest sports leagues in the world. Each year, clubs will spend hundreds of millions of dollars on players to improve their lineups and win games. Baseball has a long history of using data to leverage insights that can’t be easily seen studying player development or watching film. This analysis will use data from the Sean Lahman Baseball Database in an attempt to classify players as All-stars. These data-driven insights can help teams gain an edge over their opponents and potentially win them more games.
 
 ### Data:
-The data is taken from the Sean Lahman Baseball Database. This data was originally collected by Sean Lahman and is used by many people across the analytics world to develop tools and metrics for baseball analysis. This database contains complete player, batting, pitching, fielding, Allstar game, post season, and managerial datasets from 1871 to 2020. We will focus on the modern era of baseball, specifically the last 10 seasons of batting, fielding, pitching, and Allstar appearance data. The list of potential predictors is as follows:
+The data is taken from the Sean Lahman Baseball Database. This data was originally collected by Sean Lahman and is used by many people across the analytics world to develop tools and metrics for baseball analysis. This database contains complete player, batting, pitching, fielding, All-star game, post season, and managerial datasets from 1871 to 2020. We will focus on the modern era of baseball, specifically the last 10 seasons of batting, fielding, pitching, and All-star appearance data. The list of potential predictors is as follows:
 
 **Batting:**
 Games Batted, At Bats, Runs Scored, Hits, Doubles, Triples, Homeruns, Runs Batted In, Stolen Bases, Caught Stealing, Base On Ball (Walks), Strikeouts, Grounded Into Double Play.
@@ -30,7 +30,7 @@ Position, Games Played, Games Started, InnOuts (Time played in the field express
 Wins, Losses, Games Played, Games Started, Complete Games, Shutouts, Saves, Outs Pitched (Innings pitched x3), Hits Allowed, Earned Runs, Homeruns Allowed, Walks, Strikeouts, Earned Run Average, Wild Pitches, Balks (Illegal Pitch), Batters Faced By Pitcher, Games Finished, Runs Allowed.
 
 **Allstar:**
-List of players who appeared in the Allstar game for a given season.
+List of players who appeared in the All-star game for a given season.
 
 ### Methodology:
 The older learning methods we will consider are K-Nearest-Neighbors and Logistic Regression. Because we have access to a multitude of statistics for each player, several of which are likely to not be important for prediction, we would like to use a sparse generalized linear model to assist with predictor selection. We plan to use Support-Vector Machines (SVM) as our new learning method, which is defined by the process of taking a linear rule that classifies data, and maximizing the margins of all data points to the rule as best as possible. SVM can be applied to non-separable data as well, and in this case we expect our data to be nonseparable, as some players may outperform others in some categories, yet still not make the Allstar game.
