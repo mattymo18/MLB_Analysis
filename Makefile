@@ -51,3 +51,28 @@ README_graphics/Pitcher.plot.png:\
  derived_data/1B.Balanced.csv\
  tidy_README_plots.R
 	Rscript tidy_README_plots.R
+
+#k-means plots
+derived_graphics/Pitchers.Cluster.png\
+derived_graphics/Pitchers.Optim.Cluster.png\
+derived_graphics/Catchers.Cluster.png\
+derived_graphics/Out.Field.Cluster.png\
+derived_graphics/Short.Stop.Cluster.png\
+derived_graphics/Third.Base.Cluster.png\
+derived_graphics/Second.Base.Cluster.png\
+derived_graphics/First.Base.Cluster.png\
+derived_graphics/Catchers.Optim.Cluster.png\
+derived_graphics/Out.Field.Optim.Cluster.png\
+derived_graphics/Short.Stop.Optim.Cluster.png\
+derived_graphics/Third.Base.Optim.Cluster.png\
+derived_graphics/Second.Base.Optim.Cluster.png\
+derived_graphics/First.Base.Optim.Cluster.png:\
+ derived_data/Catch.Balanced.csv\
+ derived_data/Pitch.Balanced.csv\
+ derived_data/OF.Balanced.csv\
+ derived_data/SS.Balanced.csv\
+ derived_data/3B.Balanced.csv\
+ derived_data/2B.Balanced.csv\
+ derived_data/1B.Balanced.csv\
+ K-Means_Cluster.R
+	Rscript K-Means_Cluster.R

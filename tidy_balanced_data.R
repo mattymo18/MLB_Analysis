@@ -71,10 +71,10 @@ Catchers.clean <- rbind(Allstar.C, sample_n(No.Allstar.C, 2*nrow(Allstar.C)))
 
 #Now save everything to derived_data
 
-write.csv(First.Base.clean, "derived_data/1B.Balanced.csv")
-write.csv(Second.Base.clean, "derived_data/2B.Balanced.csv")
-write.csv(Third.Base.clean, "derived_data/3B.Balanced.csv")
-write.csv(Short.Stop.clean, "derived_data/SS.Balanced.csv")
-write.csv(Out.Field.clean, "derived_data/OF.Balanced.csv")
-write.csv(Pitchers.clean, "derived_data/Pitch.Balanced.csv")
-write.csv(Catchers.clean, "derived_data/Catch.Balanced.csv")
+write.csv(First.Base.clean, "derived_data/1B.Balanced.csv", row.names = F)
+write.csv(Second.Base.clean, "derived_data/2B.Balanced.csv", row.names = F)
+write.csv(Third.Base.clean, "derived_data/3B.Balanced.csv", row.names = F)
+write.csv(Short.Stop.clean, "derived_data/SS.Balanced.csv", row.names = F)
+write.csv(Out.Field.clean, "derived_data/OF.Balanced.csv", row.names = F)
+write.csv(Pitchers.clean, "derived_data/Pitch.Balanced.csv", row.names = F)
+write.csv(Catchers.clean, "derived_data/Catch.Balanced.csv", row.names = F)
