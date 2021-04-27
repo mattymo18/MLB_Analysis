@@ -36,3 +36,17 @@ derived_data/1B.Balanced.csv:\
  derived_data/Clean.Fielders.csv\
  tidy_balanced_data.R
 	Rscript tidy_balanced_data.R
+	
+	
+#readme plots
+README_graphics/HR.plot.png\
+README_graphics/Pitcher.plot.png:\
+ derived_data/Catch.Balanced.csv\
+ derived_data/Pitch.Balanced.csv\
+ derived_data/OF.Balanced.csv\
+ derived_data/SS.Balanced.csv\
+ derived_data/3B.Balanced.csv\
+ derived_data/2B.Balanced.csv\
+ derived_data/1B.Balanced.csv\
+ tidy_README_plots.R
+	Rscript tidy_README_plots.R

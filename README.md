@@ -44,3 +44,11 @@ This project contains R code for MLB analysis with the Sean Lahman Database.
 ### Data:
 
 Data is from the Sean Lahman Baseball Database. Data can be accessed with R Package `Lahman`. Documentation for the package can be found [Here](https://cran.r-project.org/web/packages/Lahman/Lahman.pdf). 
+
+
+Preliminary Plots
+-----------------
+
+![](README_graphics/HR.plot.png)
+
+![](README_graphics/Pitcher.plot.png)
