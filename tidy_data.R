@@ -1,6 +1,7 @@
 #### Load data and libs
 library(tidyverse)
 library(Lahman)
+library(gridExtra)
 
 data("Pitching")
 data("Batting")
@@ -89,3 +90,11 @@ Allstar.pitcher.DF[which(is.na(Allstar.pitcher.DF$AllStar)), 31] <- 0
 write.csv(Allstar.standard.DF, "derived_data/Clean.Fielders.csv", row.names = F)
 write.csv(Allstar.catcher.DF, "derived_data/Clean.Catchers.csv", row.names = F)
 write.csv(Allstar.pitcher.DF, "derived_data/Clean.Pitchers.csv", row.names = F)
+
+
+#lets do one quick data glimpse
+
+png("README_graphics/Data.Glimpse.png", width = 800, height = 250)
+p <- tableGrob(head(Allstar.standard.DF[, 1:15]))
+grid.arrange(p)
+dev.off()

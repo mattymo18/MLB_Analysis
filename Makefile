@@ -16,7 +16,8 @@ Proposal.pdf:\
  Proposal.Rmd
 	R -e "rmarkdown::render('Proposal.Rmd')"
 	
-# Clean data
+# Clean data and data glimpse table
+README_graphics/Data.Glimpse.png\
 derived_data/Clean.Pitchers.csv\
 derived_data/Clean.Catchers.csv\
 derived_data/Clean.Fielders.csv:\
