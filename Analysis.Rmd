@@ -33,3 +33,9 @@ Conclusion
 ----------
 
 
+Test
+```{r, echo = F}
+# readRDS("derived_models/knn.pitcher.rds")
+# readRDS("derived_models/knn.fielder.rds")
+# readRDS("derived_models/knn.catcher.rds")
+```
