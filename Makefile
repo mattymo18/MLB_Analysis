@@ -76,3 +76,13 @@ derived_graphics/First.Base.Optim.Cluster.png:\
  derived_data/1B.Balanced.csv\
  K-Means_Cluster.R
 	Rscript K-Means_Cluster.R
+	
+#knn models
+derived_models/knn.catcher.rds\
+derived_models/knn.fielder.rds\
+derived_models/knn.pitcher.rds: \
+ derived_data/Clean.Pitchers.csv\
+ derived_data/Clean.Fielders.csv\
+ derived_data/Clean.Catchers.csv\
+ KNN_Classify.R
+	Rscript KNN_Classify.R
