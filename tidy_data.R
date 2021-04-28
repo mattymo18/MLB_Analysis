@@ -95,6 +95,6 @@ write.csv(Allstar.pitcher.DF, "derived_data/Clean.Pitchers.csv", row.names = F)
 #lets do one quick data glimpse
 
 png("README_graphics/Data.Glimpse.png", width = 800, height = 250)
-p <- tableGrob(head(Allstar.standard.DF[, 1:15]))
+p <- tableGrob(Allstar.standard.DF[c(1, 23, 53, 100, 344), 1:15])
 grid.arrange(p)
 dev.off()

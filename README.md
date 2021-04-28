@@ -47,7 +47,7 @@ Data is from the Sean Lahman Baseball Database. Data can be accessed with R Pack
 
 ##### Glimpse of the data:
 
-![](README_graphics/Data.Glimpse.png)
+![](README_graphics/Data.Glimpse.png
 
 
 Preliminary Plots
