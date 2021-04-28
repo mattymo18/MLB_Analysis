@@ -7,6 +7,7 @@ Rplots.pdf*
 .gitconfig/*
 derived_data/*.csv
 derived_graphics/*.png
+derived_models/*.rds
 .Rdata
 .Rhistory
 .Rproj.user/
